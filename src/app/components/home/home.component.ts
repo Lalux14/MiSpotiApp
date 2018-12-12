@@ -33,6 +33,7 @@ export class HomeComponent {
           console.log(data);
           this.nuevasCanciones = data;
           this.loading = false;
+          this.error = false;
         }, ( errorService ) => {
           this.loading = false;
           this.error = true;
